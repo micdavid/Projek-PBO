@@ -38,7 +38,7 @@ class MenuKaryawan(Connect.DataBase):
         Tanggal = input("Masukkan Tanggal Lahir (dd-mm-yyyy) :")
         Alamat = input("Masukkan Alamat :")
         Nomor = input("Masukkan Nomor Telphone :")
-        query = "INSERT INTO data_karyawan (id_Karyawan, nama_karyawan, password, jenis_kelamin, tanggal_lahir, alamat, no_telphone) VALUES(?, ?, ?, ?, ?, ?)"
+        query = "INSERT INTO data_karyawan (id_Karyawan, nama_karyawan, password, jenis_kelamin, tanggal_lahir, alamat, no_telphone) VALUES(?, ?, ?, ?, ?, ?, ?)"
         value = (IdKaryawan, Password, NamaKaryawan, JenisKelamin, Tanggal, Alamat, Nomor)
         self.Cursor.execute(query, value)
         self.ConDb.commit()
