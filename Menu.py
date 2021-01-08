@@ -80,6 +80,7 @@ class MenuUtama():
             MenuUtama().MenuBarangMgr()
         elif MenuManager == 6:
             print("Terima kasih koh")
+            MenuUtama().MenuLogin()
         else:
             print("Maaf anda salah input ")
             MenuUtama().MenuManager()
@@ -102,6 +103,7 @@ class MenuUtama():
             MenuUtama().MenuBarangKry()
         elif MenuKaryawan == 4:
             print("Terima kasih gan")
+            MenuUtama().MenuLogin()
         else:
             print("Maaf anda salah input ")
             MenuUtama().MenuKaryawan()
@@ -134,6 +136,7 @@ class MenuUtama():
             MenuUtama().MenuBarangMgr()
         elif MenuBarangMgr == 6:
             print("Terima kasih koh")
+            MenuUtama().MenuLogin()
         else:
             print("Maaf anda salah input ")
             MenuUtama().MenuBarangMgr()
@@ -157,6 +160,7 @@ class MenuUtama():
             MenuUtama().MenuBarangKry()
         elif MenuBarangKry == 4:
             print("Terima kasih gan")
+            MenuUtama().MenuLogin()
         else:
             print("Maaf anda salah input ")
             MenuUtama().MenuBarangKry()
