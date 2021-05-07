@@ -77,8 +77,8 @@ def TambahDataBarang():
     idBarang = input("Masukkan id barang :")
     namaBarang = input("Masukkan Nama barang:")
     jenisBarang = input("Masukkan Jenis barang :")
-    stokBarang = input("Masukkan jumlah stok barang :")
     hargaBarang = input("Masukkan harga barang :")
+    stokBarang = input("Masukkan jumlah stok barang :")
     value = Barang.Barang(idBarang, namaBarang, jenisBarang, hargaBarang, stokBarang)
     query = f'INSERT INTO data_barang (id_barang, nama_barang, jenis_barang, stok_barang, harga_barang) VALUES ("{value.getIdBarang()}","{value.getNamaBarang()}","{value.getJenisBarang()}","{value.getHargaBarang()}","{value.getStokBarang()}")'
     Cursor.execute(query)
